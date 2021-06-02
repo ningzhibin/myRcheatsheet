@@ -1,0 +1,30 @@
+---
+title: "myRCheatsheet"
+author: Suggestions to ningzhibin@gmail.com
+date: Report generated @`r Sys.time()`
+always_allow_html: true
+output:
+  html_document:
+    fig_width: 10
+    fig_caption: TRUE
+    toc: true
+    toc_depth: 4
+    toc_float:
+      collapsed: TRUE
+      smooth_scroll: TRUE
+    number_sections: true
+  pdf_document:
+    toc: true
+    toc_depth: 4
+    highlight: tango
+    number_sections: true
+
+---
+
+
+# An simplified version is [here](https://docs.google.com/document/d/e/2PACX-1vSTTt18hfE6IDdPlrkVwM1luV-H-EVXPGeL-gc96_fim5TGZJMsLccAzo-ttWex3kcZoRh0up5F0twO/pub)
+
+# match
+
+```{r, child="subjects/match.rmd"}
+```

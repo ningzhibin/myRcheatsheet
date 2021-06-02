@@ -1,0 +1,50 @@
+## mapping / match between two list
+
+* quick message: using match 
+
+let's say you have a vector/list, you would like to convert this list (l in this example) to something else according to some mapping relation(df in this example)
+
+
+
+-   generate sample data
+
+```{r}
+df <- data.frame(from = LETTERS[1:5], to = randomNames::randomNames(5))
+l <-sample(LETTERS[1:5], 10, replace = TRUE)
+
+```
+
+-   mapping table:
+
+```{r echo=FALSE}
+df
+
+```
+
+-   your target list:
+
+```{r echo=FALSE}
+l
+```
+
+you can use match to get the index of the element of the first vector in the second vector, like this
+
+```{r}
+match(l,df$from)
+
+```
+
+Now you now how to use the mapping. you can either get a data.frame, like this:
+
+```{r}
+df[match(l,df$from),]
+```
+
+or only get a clean list like this:
+
+```{r}
+
+df[match(l,df$from),2]
+
+
+```
